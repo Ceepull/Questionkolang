@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d1fff9;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.header_text {
+    font-size: 3em;
+    color: #d32f2f;
+}
+
+.gif_container img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+
+.heart {
+    position: absolute;
+    font-size: 2em;
+    color: red;
+    animation: heartAnimation 2s infinite;
+  }
+
+  @keyframes heartAnimation {
+    0% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5) translateY(-20px);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Random positioning of hearts */
+  .heart:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-duration: 2.5s;
+  }
+
+  .heart:nth-child(2) {
+    top: 40%;
+    left: 30%;
+    animation-duration: 3s;
+  }
+
+  .heart:nth-child(3) {
+    top: 40%;
+    left: 15%;
+    animation-duration: 2.2s;
+    scale: 2.5;
+  }
+
+  .heart:nth-child(4) {
+    top: 30%;
+    left: 75%;
+    animation-duration: 2.8s;
+  }
+
+  .heart:nth-child(5) {
+    top: 60%;
+    left: 90%;
+    animation-duration: 3.3s;
+    scale: 2;
+  }
+
+</style>
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YIPEEE, kaw na mag plan🥰🥰🥰</title>
+    <link rel="stylesheet" href="./yes_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header_text">YIPEEE, kaw na mag plan🥰🥰🥰</h1>
+        <div class="gif_container">
+            <img src="yippee-cat-kitty.gif">
+        </div>
+
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+
+    </div>
+</body>
+</html>
